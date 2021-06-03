@@ -30,49 +30,17 @@ namespace SenwesAssignment_API.Controllers
         [HttpGet]
         public IActionResult Get()
         {
-            try
-            {
-                var employeeData = _loadData.LoadEmployeeData();
-                return Ok(employeeData);
-            }
-            catch (Exception ex)
-            {
-                if (_logger != null)
-                {
-                    _logger.LogError(new Exception(ex.ToString()), "Get all employees error", null);
-                }
-
-                return StatusCode(500, "Unexpected error occurred while trying to retrieve all employees");
-            }
+            var employeeData = _loadData.LoadEmployeeData();
+            return Ok(employeeData);
         }
 
-        /// <summary>
-        /// Get employee by employee id
-        /// </summary>
-        /// <returns>Returns a single employee</returns>
+        
         [Route("Get/{empId}")]
         [HttpGet]
         public IActionResult GetByEmployeeId(int empId)
         {
-            try
-            {
-                var employee = _loadData.LoadEmployeeData().Where(x => x.EmpID == empId).FirstOrDefault();
-                if (employee == null)
-                {
-                    return BadRequest("Employee not found");
-                }
-
-                return Ok(employee);
-            }
-            catch (Exception ex)
-            {
-                if (_logger != null)
-                {
-                    _logger.LogError(new Exception(ex.ToString()), $"Get employee by id: {empId} error ", null);
-                }
-
-                return StatusCode(500, "Unexpected error occurred while trying to retrieve employee");
-            }
+            var employee = _loadData.LoadEmployeeData().Where(x => x.EmpID == empId).FirstOrDefault();
+            return Ok(employee);
         }
     }
 }
