@@ -1,6 +1,6 @@
 using System;
 
-namespace SenwesAssignment_API
+namespace SenwesAssignment_Data.Models
 {
     public class Employee
     {

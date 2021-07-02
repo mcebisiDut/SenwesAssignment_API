@@ -1,18 +1,15 @@
-using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
-using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
+using SenwesAssignment_Data.Interfaces;
+using SenwesAssignment_Data.Repositories;
+using SenwesAssignment_Library.Interfaces;
+using SenwesAssignment_Library.Services;
 using System;
-using System.Collections.Generic;
 using System.IO;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace SenwesAssignment_API
 {
@@ -30,9 +27,12 @@ namespace SenwesAssignment_API
         {
 
             services.AddControllers();
+            services.AddScoped<IEmployeeService, EmployeeService>();
+            services.AddScoped<IEmployeeRepository, EmployeeRepository>();
 
             services.AddSwaggerGen(c =>
             {
+
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "SenwesAssignment_API", Version = "v1" });
                 c.AddSecurityDefinition("bearerAuth", new OpenApiSecurityScheme
                 {

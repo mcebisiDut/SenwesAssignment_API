@@ -3,12 +3,18 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31229.75
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SenwesAssignment_API", "SenwesAssignment_API.csproj", "{3081582C-AE37-4772-876E-5C071472176B}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{ACAC8D50-348B-4C50-A552-BEA52B2AB424}"
 	ProjectSection(SolutionItems) = preProject
 		.editorconfig = .editorconfig
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SenwesAssignment_Data", "SenwesAssignment_Data\SenwesAssignment_Data.csproj", "{EA770FC3-02D4-42E0-98B0-8ABBA8572C56}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SenwesAssignment_API", "SenwesAssignment_API\SenwesAssignment_API.csproj", "{D6E8E0F8-898A-495A-8142-E3C4897FE14D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SenwesAssignment_Tests", "SenwesAssignment_Tests\SenwesAssignment_Tests.csproj", "{AA613672-16A4-42FC-A59C-62753DA37F3B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SenwesAssignment_Library", "SenwesAssignment_Library\SenwesAssignment_Library.csproj", "{87C29053-1B79-4851-861B-793FC0DC147B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -20,6 +26,26 @@ Global
 		{3081582C-AE37-4772-876E-5C071472176B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3081582C-AE37-4772-876E-5C071472176B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3081582C-AE37-4772-876E-5C071472176B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9AF2592F-D3BA-4017-B986-7B8128F2BF6C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9AF2592F-D3BA-4017-B986-7B8128F2BF6C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9AF2592F-D3BA-4017-B986-7B8128F2BF6C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9AF2592F-D3BA-4017-B986-7B8128F2BF6C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EA770FC3-02D4-42E0-98B0-8ABBA8572C56}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA770FC3-02D4-42E0-98B0-8ABBA8572C56}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA770FC3-02D4-42E0-98B0-8ABBA8572C56}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA770FC3-02D4-42E0-98B0-8ABBA8572C56}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D6E8E0F8-898A-495A-8142-E3C4897FE14D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D6E8E0F8-898A-495A-8142-E3C4897FE14D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D6E8E0F8-898A-495A-8142-E3C4897FE14D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D6E8E0F8-898A-495A-8142-E3C4897FE14D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA613672-16A4-42FC-A59C-62753DA37F3B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA613672-16A4-42FC-A59C-62753DA37F3B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA613672-16A4-42FC-A59C-62753DA37F3B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA613672-16A4-42FC-A59C-62753DA37F3B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{87C29053-1B79-4851-861B-793FC0DC147B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{87C29053-1B79-4851-861B-793FC0DC147B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{87C29053-1B79-4851-861B-793FC0DC147B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{87C29053-1B79-4851-861B-793FC0DC147B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
